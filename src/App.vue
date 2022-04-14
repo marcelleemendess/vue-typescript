@@ -1,15 +1,16 @@
 <template>
- vue 
+  <CounterComponent />
 </template>
 
 <script lang="ts">
-import { defineComponent } from "@vue/runtime-core";
+import { defineComponent } from "vue";
+// defineComponent for typscritp
+import CounterComponent from "./components/CounterComonent.vue";
 
 export default defineComponent({
-  name:"App",
-  components: {},
+  name: "App",
+  components: {
+    CounterComponent,
+  },
 });
 </script>
-
-<style lang="scss">
-</style>
